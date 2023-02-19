@@ -4,7 +4,7 @@ export const api = createApi({
     baseUrl: import.meta.env.VITE_REACT_APP_BASE_URL,
   }),
   reducerPath: "adminApi",
-  tagTypes: ["User", "Products"],
+  tagTypes: ["User", "Products", "Customers", "Transactions"],
   endpoints: (build) => ({
     getUser: build.query({
       query: (id) => `general/user/${id}`,
